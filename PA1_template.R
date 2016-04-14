@@ -21,7 +21,7 @@ total <- tapply(gooddata$steps, gooddata$date, sum)
 
 ## 2. Make a histogram of the total number of steps taken each day
 
-hist(total, xlab = "Total Number of Steps Per Day")
+hist(total, breaks = 20, xlab = "Total Number of Steps Per Day")
 
 ## 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -74,7 +74,7 @@ fulldata <- actdata
 
 total <- tapply(fulldata$steps, fulldata$date, sum)
 
-hist(total, xlab = "Total Number of Steps Per Day")
+hist(total, breaks = 20, xlab = "Total Number of Steps Per Day")
 
 fullm1 <- mean(total, na.rm = TRUE)
 fullm2 <- median(total, na.rm = TRUE)

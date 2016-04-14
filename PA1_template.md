@@ -30,7 +30,7 @@ total <- tapply(gooddata$steps, gooddata$date, sum)
 
 # 2. Make a histogram of the total number of steps taken each day
 
-hist(total, xlab = "Total Number of Steps Per Day")
+hist(total, breaks = 20, xlab = "Total Number of Steps Per Day")
 ```
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
@@ -108,7 +108,7 @@ fulldata <- actdata
   
   total <- tapply(fulldata$steps, fulldata$date, sum)
 
-  hist(total, xlab = "Total Number of Steps Per Day")
+  hist(total, breaks = 20, xlab = "Total Number of Steps Per Day")
 ```
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
